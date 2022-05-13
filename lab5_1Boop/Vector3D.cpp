@@ -92,7 +92,7 @@ istream& operator >>(istream& in, Vector3D& a) {
     cout << "x: "; in >> a.x;
     cout << "y: "; in >> a.y;
     cout << "z: "; in >> a.z;
-    if (!in) throw Exc("input value needs to be double");
+    if (!in) throw invalid_argument("input needs to be double");
     return in;
 }
 
